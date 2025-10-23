@@ -1,4 +1,3 @@
-
 const productsContainer = document.querySelector('.sofas');
 
 getSofas();
@@ -14,7 +13,7 @@ function renderProducts(productsArray) {
         const productHTML = `
 					<div class="products-item" data-id="${item.id}">
 						<div class="products-item-img"> 
-							<img src="./img/items/sofa/${item.imgSrc}" alt="Упс..." class="productImg">
+							<img src="./img/items/sofa/${item.imgSrc}" alt="Кешіріңіз..." class="productImg">
 						</div>
 
 						<div class="products-item-title">${item.title}</div>
@@ -29,16 +28,16 @@ function renderProducts(productsArray) {
 							</div>
 
 							<div class="price">
-								<div class="price__currency">${item.price} ₽</div>
+								<div class="price__currency">${item.price} ₸</div>
 							</div>
 						</div>
 
 						<div class="products-action">
                             <button data-cart class="button glow-on-hover product-button">
-                                В корзину
+                                Себетке
                             </button>
                         </div>
-						<div class="price__weight">Добавлено: ${dataUpdate}</div>
+						<div class="price__weight">Қосылған күні: ${dataUpdate}</div>
 					</div>
 					`;
         productsContainer.insertAdjacentHTML('beforeend', productHTML);
