@@ -1,4 +1,4 @@
-//смена темы на светлую / тёмную
+// тақырыпты ақ/қараға ауыстыру
 
 const text = document.querySelector('.ThemeInfo')
 
@@ -17,11 +17,11 @@ function addlightClassToHTML() {
     try {
     if (localStorage.getItem('theme') === 'light') {
         document.querySelector('html').classList.add('light');
-        text.innerText = 'тёмная тема'
+        text.innerText = 'қараңғы'
     }
     else {
         document.querySelector('html').classList.remove('light');
-        text.innerText = 'светлая тема'
+        text.innerText = 'жарық'
 
     }
     } catch (err) { }
