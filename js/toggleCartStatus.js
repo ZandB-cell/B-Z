@@ -44,13 +44,13 @@ function calcCartPriceAndDelivery() {
 
 	if (priceTotal >= 50000) {
 		deliveryCost.classList.add('free');
-		deliveryCost.innerText = 'бесплатно';
+		deliveryCost.innerText = 'тегін';
         deliveryText.innerText = ''
 		totalPriceEl.innerText = priceTotal;
 	} else {
 		deliveryCost.classList.remove('free');
-		deliveryCost.innerText = '2500 ₽';
-        deliveryText.innerText = 'Бесплатно при заказе от 50000 ₽'
+		deliveryCost.innerText = '2500 ₸';
+        deliveryText.innerText = '50000 ₸ және одан жоғары тапсырыстарда тегін'
 		totalPriceEl.innerText = priceTotal + 2500;
 	}
 }
