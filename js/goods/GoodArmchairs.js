@@ -1,82 +1,82 @@
 const armchairs = [
 	{
 		"id": "002",
-		"title": "Кресло 'Softy' (мята)",
+		"title": "«Softy» креслосы (жалбыз түсті)",
 		"art": 2754628,
 		"price": 2350,
-		"text": "Мягкое кресло на ножках в нескольких оттенках",
+		"text": "Бірнеше түсте ұсынылған жұмсақ аяқтық кресло",
 		"imgSrc": "armchair(10).png"
 	},
 	{
 		"id": "005",
-		"title": "Кресло 'Softy' (голубой)",
+		"title": "«Softy» креслосы (көк түсті)",
 		"art": 2856788,
 		"price": 2350,
-		"text": "Мягкое кресло на ножках в нескольких оттенках",
+		"text": "Бірнеше түсте ұсынылған жұмсақ аяқтық кресло",
 		"imgSrc": "armchair(8).png"
 	},
 	{
 		"id": "001",
-		"title": "Кресло 'Softy' (белый)",
+		"title": "«Softy» креслосы (ақ түсті)",
 		"art": 85654952,
 		"price": 2350,
-		"text": "Мягкое кресло на ножках в нескольких оттенках",
+		"text": "Бірнеше түсте ұсынылған жұмсақ аяқтық кресло",
 		"imgSrc": "armchair(6).png"
 	},
 	{
 		"id": "004",
-		"title": "Кресло 'Softy' (розовый)",
+		"title": "«Softy» креслосы (қызғылт түсті)",
 		"art": 952684,
 		"price": 2350,
-		"text": "Мягкое кресло на ножках в нескольких оттенках",
+		"text": "Бірнеше түсте ұсынылған жұмсақ аяқтық кресло",
 		"imgSrc": "armchair(7).png"
 	},
 	{
 		"id": "003",
-		"title": "Кресло без подлокотников",
+		"title": "Тіреуішсіз кресло",
 		"art": 24585876,
 		"price": 3500,
-		"text": "Яркое современное кресло без подлокотников",
+		"text": "Жарқын заманауи тіреуішсіз кресло",
 		"imgSrc": "armchair(3).png"
 	},
 	{
 		"id": "008",
-		"title": "Кресло 'Dreams'",
+		"title": "«Dreams» креслосы",
 		"art": 663348,
 		"price": 4800,
-		"text": "Мягкое удобное кресло со сьёмными чехлами",
+		"text": "Жұмсақ ыңғайлы алынбалы қаптамасы бар кресло",
 		"imgSrc": "armchair(9).png"
 	},
 	{
 		"id": "010",
-		"title": "Кресло-трансформер",
+		"title": "Трансформер креслосы",
 		"art": 2489568,
 		"price": 4300,
-		"text": "Стул-кресло на ножках с высокой спинкой",
+		"text": "Биік арқалықты аяқтық орындық-кресло",
 		"imgSrc": "armchair(5).png"
 	},
 	{
 		"id": "007",
-		"title": "Кресло-кровать",
+		"title": "Кресло-төсек",
 		"art": 2643528,
 		"price": 6300,
-		"text": "Кресло с раскладным механизмом и сьёмными чехлами",
+		"text": "Жайылатын механизмі және алынбалы қаптамасы бар кресло",
 		"imgSrc": "armchair(4).png"
 	},
 	{
 		"id": "006",
-		"title": "Садовое кресло",
+		"title": "Бақ креслосы",
 		"art": 222248,
 		"price": 1900,
-		"text": "Плетёное пластиковое кресло для сада",
+		"text": "Баққа арналған өрілген пластик кресло",
 		"imgSrc": "armchair(2).png"
 	},
 	{
 		"id": "009",
-		"title": "Плетёное кресло",
+		"title": "Өрілген кресло",
 		"art": 292548,
 		"price": 2300,
-		"text": "Плетёное кресло со сьёмными чехлами",
+		"text": "Алынбалы қаптамасы бар өрілген кресло",
 		"imgSrc": "armchair(1).png"
 	}
 ]
@@ -90,7 +90,7 @@ armchairs.forEach ((armchair) => {
     `
 	<div class="products-item" data-id="${armchair.id}">
 		<div class="products-item-img"> 
-			<img src="./img/items/armchairs/${armchair.imgSrc}" alt="Упс..." class="productImg">
+			<img src="./img/items/armchairs/${armchair.imgSrc}" alt="Кешіріңіз..." class="productImg">
 		</div>
 
 		<div class="products-item-title ">${armchair.title}</div>
@@ -105,14 +105,14 @@ armchairs.forEach ((armchair) => {
 			</div>
 
 			<div class="price">
-				<div class="price__currency">${armchair.price} ₽</div>
+				<div class="price__currency">${armchair.price} ₸</div>
 			</div>
 		</div>
 
 		<div class="products-action">
-			<button data-cart class="button glow-on-hover product-button" type="button"> В корзину</button>
+			<button data-cart class="button glow-on-hover product-button" type="button"> Себетке</button>
 		</div>
-		<div class="price__weight">Добавлено: ${dataUpdate}</div>
+		<div class="price__weight">Қосылған күні: ${dataUpdate}</div>
 	</div>
 
     `
