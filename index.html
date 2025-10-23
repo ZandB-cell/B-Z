@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +7,21 @@
     <link rel="stylesheet" href="./css/mainController.css">
     <link rel="shortcut icon" href="./img/style/sofa.png" type="image/x-icon">
 
-    <title>Cozy home</title>
+    <title>Ыңғайлы үй</title>
 </head>
 <body>
     <section class="main">
         <header class="header">
             <div class="container">
-                <div><img src="./img/style/logo.svg" alt="Что-то пошло не так" class="logo"></div>
+                <div><img src="./img/style/logo.svg" alt="Қате орын алды" class="logo"></div>
                 <nav class="menu">
                     <ul class="menu-list">
-                        <li class="menu-item"><a data-link="chairs"><div class="circle"><img src="./img/style/chairs.svg" alt="Упс.." title="Стулья"></div></a></li>
-                        <li class="menu-item"><a data-link="armchairs"><div class="circle"><img src="./img/style/couches.svg" alt="Упс.." title="Кресла"></div></a></li>
-                        <li class="menu-item"><a data-link="wardrobes"><div class="circle"><img src="./img/style/wardrobe.svg" alt="Упс.." title="Шкафы"></div></a></li>
-                        <li class="menu-item"><a data-link="sofas"><div class="circle"><img src="./img/style/beds.svg" alt="Упс.." title="Кровати и диваны"></div></a></li>
-                        <li class="menu-item"><a data-link="kitchen"><div class="circle"><img src="./img/style/kitchens.svg" alt="Упс.." title="Кухни"></div></a></li>
-                        <li class="menu-item"><a data-link="help"><div class="circle"><img src="./img/style/help.svg" alt="Упс.." title="Связаться с нами"></div></a></li>
-                        
+                        <li class="menu-item"><a data-link="chairs"><div class="circle"><img src="./img/style/chairs.svg" alt="Упс.." title="Орындықтар"></div></a></li>
+                        <li class="menu-item"><a data-link="armchairs"><div class="circle"><img src="./img/style/couches.svg" alt="Упс.." title="Креслолар"></div></a></li>
+                        <li class="menu-item"><a data-link="wardrobes"><div class="circle"><img src="./img/style/wardrobe.svg" alt="Упс.." title="Шкафтар"></div></a></li>
+                        <li class="menu-item"><a data-link="sofas"><div class="circle"><img src="./img/style/beds.svg" alt="Упс.." title="Кереуеттер мен дивандар"></div></a></li>
+                        <li class="menu-item"><a data-link="kitchen"><div class="circle"><img src="./img/style/kitchens.svg" alt="Упс.." title="Асүй"></div></a></li>
+                        <li class="menu-item"><a data-link="help"><div class="circle"><img src="./img/style/help.svg" alt="Упс.." title="Бізбен байланысыңыз"></div></a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,12 +30,12 @@
         <section class="main-content">
             <div class="container">
                 <div class="main-info">
-                    <span class="main-small-info">Новая коллекция</span>
+                    <span class="main-small-info">Жаңа коллекция</span>
                     <button class="theme themetoggle">
                         <span class="ThemeInfo"></span>
                     </button>
-                    <h4 class="main-title"> Качество, идущее в ногу с комфортом</h4>
-                    <p class="main-text">Cпешите заказать сезонные новинки и насладиться комфортом и качеством мебели. Мы готовы сделать бизайн-проект вашего дома бесплатно.</p>
+                    <h4 class="main-title"> Сапа мен жайлылық қатар жүреді</h4>
+                    <p class="main-text">Маусымдық жаңалықтарды сатып алып, жиһаздың жайлылығы мен сапасын сезініңіз. Біз сіздің үйіңізге дизайн-жобаны тегін жасап береміз.</p>
                     <div class="main-action">
                         <button class="button glow-on-hover" id="main-info" type="button">Каталог</button>
                     </div>
@@ -45,55 +44,54 @@
             </div>
         </section>
 
-        <button class="back-to-top hidden" title="Вернуться наверх">	&#9650;</button>
+        <button class="back-to-top hidden" title="Жоғарыға оралу">	&#9650;</button>
     </section>
 
     <div class="purchase">
-                <section class="showCart">
+        <section class="showCart">
             <form action="./done.html">
                 <div class="card-body">
                     <div class="cartHeader">
-                        <h5 class="card-title">Ваш заказ:</h4>
+                        <h5 class="card-title">Сіздің тапсырысыңыз:</h5>
                         <div class="cancel">&#10008;</div>
                     </div>
                     
-
-                    <div data-cart-empty class="empty"> Корзина пуста </div>
+                    <div data-cart-empty class="empty"> Себет бос </div>
 
                     <div class="cartContent">
                         <div class="cart-wrapper"></div>
 
                         <div class="cart-total">
                             <p data-cart-delivery class="none">
-                                <span>Доставка:</span>
-                                <span class="delivery-cost">2500 ₽</span><br>
-                                <span class="deliveryText">Бесплатно при заказе от 50000 ₽</span>
+                                <span>Жеткізу:</span>
+                                <span class="delivery-cost">2500 ₸</span><br>
+                                <span class="deliveryText">50000 ₸ жоғары тапсырысқа тегін жеткізу</span>
                             </p>
-                            <p class="emptyBucket none"><span>Итого:</span>
+                            <p class="emptyBucket none"><span>Барлығы:</span>
                                 <span class="total-price">0</span>
-                                <span class="rouble">₽</span></p>
+                                <span class="rouble">₸</span></p>
 
                             <div id="order-form" class="card-body none">
-                                <h5 class="card-title">Способ оплаты:</h4>
+                                <h5 class="card-title">Төлем түрі:</h5>
                                 <form>
                                     <div class="form-group">
                                         <input type="radio" name="payment" value="cash" id="cash-value" class="radio-hidden" required>
-						                <label for="cash-value" class="radio-label">Наличные</label>
+						                <label for="cash-value" class="radio-label">Қолма-қол</label>
 
                                         <input type="radio" name="payment" value="card" id="card-value" class="radio-hidden">
-						                <label for="card-value" class="radio-label">По карте в офисе</label>
+						                <label for="card-value" class="radio-label">Офисте карта арқылы</label>
 
                                         <input type="radio" name="payment" value="online" id="online-value" class="radio-hidden">
 						                <label for="online-value" class="radio-label">Онлайн</label>
 
                                         <input type="radio" name="payment" value="loan" id="loan-value" class="radio-hidden">
-						                <label for="loan-value" class="radio-label">В кредит</label>
+						                <label for="loan-value" class="radio-label">Несие арқылы</label>
 
-                                        <textarea name="extra" id="userComment" cols="30" rows="3" maxlength="2000" placeholder="Оставить комментарий"></textarea>
+                                        <textarea name="extra" id="userComment" cols="30" rows="3" maxlength="2000" placeholder="Пікір қалдыру"></textarea>
 
                                     </div>
 
-                                    <button  class="freeDelivery confirm disabled" >Оформить заказ</button>
+                                    <button class="freeDelivery confirm disabled" >Тапсырысты рәсімдеу</button>
                                 </form>
                             </div>
                         </div>
@@ -102,15 +100,15 @@
             </form>
         </section>
 
-        <button class="cart cartIcon " id="cart" title="Купить">
-            <img class="cart__image" src="./img/style/cart.svg" alt="Cart" />
+        <button class="cart cartIcon " id="cart" title="Сатып алу">
+            <img class="cart__image" src="./img/style/cart.svg" alt="Себет" />
             <div class="cart__num" id="cart_num">0</div>
         </button>
     </div>
 
     <section class="products" id="chairs">
         <div class="container">
-            <div class="title">Стулья</div>
+            <div class="title">Орындықтар</div>
             <div class="products-items" id="chairCard"></div>
         </div>
     </section>
@@ -118,57 +116,56 @@
 
     <section class="products" id="armchairs">
         <div class="container">
-            <div class="title">Кресла</div>
+            <div class="title">Креслолар</div>
             <div class="products-items" id="armchairCard"></div>
         </div>
     </section>
 
     <section class="products" id="wardrobes">
         <div class="container">
-            <div class="title">Шкафы</div>
+            <div class="title">Шкафтар</div>
             <div class="products-items" id="wardCard"></div>
         </div>
     </section>
 
     <section class="products" id="sofas">
         <div class="container">
-            <div class="title">Диваны</div>
-            <div class="products-items sofas">
-            </div>
+            <div class="title">Дивандар</div>
+            <div class="products-items sofas"></div>
         </div>
     </section>
         
     <section class="products" id="kitchen">
         <div class="container">
-            <div class="title">Кухни</div>
+            <div class="title">Асүй</div>
             <div class="products-items" id="kitchenCard"></div>
         </div>
     </section>
 
     <section class="help" id="help">
         <div class="container">
-            <div class="title">Связаться с консультантом</div>
+            <div class="title">Кеңесшіге хабарласыңыз</div>
 
             <div class="help-form">
                 <div class="help-form-text">
-                    Заполните все данные и наш менеджер свяжется с вами для консультации
+                    Барлық деректерді толтырыңыз, біздің менеджер сізге кеңес беру үшін хабарласады
                 </div>
 
                 <div class="help-form-inputs">
 
                     <div class="help-form-input">
-                        <input type="text" placeholder="Ваше имя" id="name">
+                        <input type="text" placeholder="Атыңыз" id="name">
                     </div>
 
                     <div class="help-form-input">
-                        <input type="text" placeholder="Ваш телефон" id="phone">
+                        <input type="text" placeholder="Телефон нөміріңіз" id="phone">
                     </div>
 
-                    <div class="help-form-input" >
-                        <input type="text" placeholder="Ваш вопрос" id="helpText" maxlength="2000">
+                    <div class="help-form-input">
+                        <input type="text" placeholder="Сұрағыңыз" id="helpText" maxlength="2000">
                     </div>
 
-                    <button class="button glow-on-hover" id="help-action">Заказать звонок</button>
+                    <button class="button glow-on-hover" id="help-action">Қоңырау шалу тапсырысы</button>
                 </div>
             </div>
         </div>
@@ -179,19 +176,19 @@
         <div class="container">
             <div class="footer-links">
                 <ul class="menu-list footer-menu">
-                    <li class="footer-item"><a data-link="chairs">Стулья</a></li>
-                    <li class="footer-item"><a data-link="armchairs">Кресла</a></li>
-                    <li class="footer-item"><a data-link="wardrobes">Шкафы</a></li>
+                    <li class="footer-item"><a data-link="chairs">Орындықтар</a></li>
+                    <li class="footer-item"><a data-link="armchairs">Креслолар</a></li>
+                    <li class="footer-item"><a data-link="wardrobes">Шкафтар</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <ul class="menu-list footer-menu">
-                    <li class="footer-item"><a data-link="sofas">Диваны</a></li>
-                    <li class="footer-item"><a data-link="kitchen">Кухни</a></li>
+                    <li class="footer-item"><a data-link="sofas">Дивандар</a></li>
+                    <li class="footer-item"><a data-link="kitchen">Асүй</a></li>
                 </ul>
 
             </div>
-            <div class="rights">&copy; Все права защищены</div>
+            <div class="rights">&copy; Барлық құқықтар қорғалған</div>
         </div>
     </footer>
 
