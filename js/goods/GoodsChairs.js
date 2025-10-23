@@ -1,91 +1,88 @@
-
 const chairs = [
 	{
 		"id": "02",
-		"title": "Кухонный стул",
+		"title": "Асүйге арналған орындық",
 		"art": 288528,
 		"price": 1450,
-		"text": "Мягкий стул для кухни на деревянных ножках",
+		"text": "Ағаш аяқтарында жұмсақ асүй орындық",
 		"imgSrc": "chair(2).png"
 	},
 	{
 		"id": "05",
-		"title": "Кухонный стул (пластик)",
+		"title": "Асүй орындық (пластик)",
 		"art": 282388,
 		"price": 1200,
-		"text": "Пластиковый стул с металическими подпорками",
+		"text": "Металл тіреулері бар пластик орындық",
 		"imgSrc": "chair(5).png"
 	},
 	{
 		"id": "01",
-		"title": "Мягкий стул для кухни",
+		"title": "Жұмсақ асүй орындық",
 		"art": 8952,
 		"price": 1900,
-		"text": "Мягкий стул со сьёмными чехлами и подушкой",
+		"text": "Ауыстырылатын қаптамасы мен жастығы бар жұмсақ орындық",
 		"imgSrc": "chair(1).png"
 	},
 	{
 		"id": "04",
-		"title": "Стул полусфера",
+		"title": "Жартылай сфера орындық",
 		"art": 952044,
 		"price": 2300,
-		"text": "Идеально подходил для отдыха в офисе и дома",
+		"text": "Үйде және кеңседе демалуға өте ыңғайлы",
 		"imgSrc": "chair(4).png"
 	},
 	{
 		"id": "03",
-		"title": "Офисный стул",
+		"title": "Офис орындық",
 		"art": 245678,
 		"price": 1900,
-		"text": "Крутящийся офисный стул с подьёмным механизмом",
+		"text": "Тұтқыш механизмі бар айналмалы офис орындық",
 		"imgSrc": "chair(3).png"
 	},
 	{
 		"id": "08",
-		"title": "Кресло-стул",
+		"title": "Кресло-орындық",
 		"art": 95348,
 		"price": 2200,
-		"text": "Мягкое удобное кресло со сьёмными чехлами",
+		"text": "Ауыстырылатын қаптамасы бар жұмсақ ыңғайлы кресло",
 		"imgSrc": "chair(8).png"
 	},
 	{
 		"id": "10",
-		"title": "Стул 'Comfi'",
+		"title": "«Comfi» орындық",
 		"art": 24856388,
 		"price": 3300,
-		"text": "Стул-кресло на ножках с высокой спинкой",
+		"text": "Биік арқалықты аяқтық кресло-орындық",
 		"imgSrc": "chair(10).png"
 	},
 	{
 		"id": "07",
-		"title": "Стул 'Comfi' (серый)",
+		"title": "«Comfi» орындық (сұр)",
 		"art": 2828528,
 		"price": 3000,
-		"text": "Мягкий стул с подлокотниками в сером варианте",
+		"text": "Сұр түсті тіреуіштері бар жұмсақ орындық",
 		"imgSrc": "chair(7).png"
 	},
 	{
 		"id": "06",
-		"title": "Стул 'Arto'",
+		"title": "«Arto» орындық",
 		"art": 2885248,
 		"price": 3900,
-		"text": "Высокий стул на ножках с резными боковинками",
+		"text": "Оюлы бүйір бөліктері бар биік аяқтық орындық",
 		"imgSrc": "chair(6).png"
 	},
 	{
 		"id": "09",
-		"title": "Стул 'Leak' (резной)",
+		"title": "«Leak» орындық (оюлы)",
 		"art": 289858,
 		"price": 5300,
-		"text": "Резной стул ручной работы в серебристом цвете",
+		"text": "Қолмен жасалған күміс түсті оюлы орындық",
 		"imgSrc": "chair(9).png"
 	}
 ]
 
 
 let cardItem = ''
-//title__inline input-short
-// <div class="items__current" data-counter>1</div>
 let chairCard = document.getElementById('chairCard')
 chairs.forEach ((chair) => {
     cardItem +=
@@ -93,7 +90,7 @@ chairs.forEach ((chair) => {
 
     <div class="products-item" data-id="${chair.id}">
                     <div class="products-item-img"> 
-                        <img src="./img/items/chairs/${chair.imgSrc}" alt="Упс..." class="productImg">
+                        <img src="./img/items/chairs/${chair.imgSrc}" alt="Кешіріңіз..." class="productImg">
                     </div>
 
                     <div class="products-item-title ">${chair.title}</div>
@@ -108,18 +105,16 @@ chairs.forEach ((chair) => {
                         </div>
 
                         <div class="price">
-                            <div class="price__currency">${chair.price} ₽</div>
+                            <div class="price__currency">${chair.price} ₸</div>
                         </div>
                     </div>
 
                     <div class="products-action">
-                        <button data-cart class="button glow-on-hover product-button"> В корзину</button>
+                        <button data-cart class="button glow-on-hover product-button"> Себетке</button>
                     </div>
-					<div class="price__weight">Добавлено: ${dataUpdate}</div>
+					<div class="price__weight">Қосылған күні: ${dataUpdate}</div>
                 </div>
 
     `
 })
 chairCard.insertAdjacentHTML('beforeend', cardItem);
-
-
