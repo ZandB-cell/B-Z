@@ -1,19 +1,16 @@
-
-
-//Формат: Среда, 3 неделя Декабря 2021 года*
+// Пішім: Сәрсенбі, 3 апта Желтоқсан 2021 жыл
 
 const date = new Date(document.lastModified);
 
-const weekDays = ['0','Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
-const monthNames = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря']
+const weekDays = ['0','Дүйсенбі', 'Сейсенбі', 'Сәрсенбі', 'Бейсенбі', 'Жұма', 'Сенбі', 'Жексенбі'];
+const monthNames = ['Қаңтар', 'Ақпан', 'Наурыз', 'Сәуір', 'Мамыр', 'Маусым', 'Шілде', 'Тамыз', 'Қыркүйек', 'Қазан', 'Қараша', 'Желтоқсан'];
 
-let day = date.getDay()
-let week = getNumberOfWeek()
-let month = date.getMonth()
-const year = date.getFullYear()
+let day = date.getDay();
+let week = getNumberOfWeek();
+let month = date.getMonth();
+const year = date.getFullYear();
 
-let dataUpdate = `${weekDays[day]}, ${week} неделя ${monthNames[month]}, ${year} года`
-
+let dataUpdate = `${weekDays[day]}, ${week} апта ${monthNames[month]} ${year} жыл`;
 
 function getNumberOfWeek() {
     const today = date;
@@ -21,3 +18,5 @@ function getNumberOfWeek() {
     const pastDaysOfYear = (today - firstDayOfYear) / 86400000;
     return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
 }
+
+console.log(dataUpdate);
