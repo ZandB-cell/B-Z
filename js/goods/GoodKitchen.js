@@ -1,91 +1,90 @@
-
 const kitchens = [
 	{
 		"id": "2",
-		"title": "Кухня  Ветторе",
+		"title": "Ветторе асүйі",
 		"art": 28528,
 		"price": 74350,
-		"text": "Готовое решение для небольшой кухни, в котором предусмотрено всё необходимое",
+		"text": "Кішкентай асүйге арналған дайын шешім, барлық қажетті нәрсе қарастырылған",
 		"imgSrc": "kitchen(18).png"
 	},
 	{
 		"id": "5",
-		"title": "Кухня Джоконда",
+		"title": "Джоконда асүйі",
 		"art": 288288,
 		"price": 32300,
-		"text": "Готовое решение для небольшой кухни, в котором предусмотрено всё необходимое",
+		"text": "Кішкентай асүйге арналған дайын шешім, барлық қажетті нәрсе қарастырылған",
 		"imgSrc": "kitchen(16).png"
 	},
 	{
 		"id": "1",
-		"title": "Кухня Маелла",
+		"title": "Маелла асүйі",
 		"art": 8588952,
 		"price": 39000,
-		"text": "Готовое решение для небольшой кухни, в котором предусмотрено всё необходимое",
+		"text": "Кішкентай асүйге арналған дайын шешім, барлық қажетті нәрсе қарастырылған",
 		"imgSrc": "kitchen(15).png"
 	},
 	{
 		"id": "4",
-		"title": "Кухня Ортлер",
+		"title": "Ортлер асүйі",
 		"art": 928854,
 		"price": 43000,
-		"text": "Многофункциональный гарнитур по вашим размерам",
+		"text": "Өз өлшемдеріңізге қарай көпфункционалды гарнитур",
 		"imgSrc": "kitchen(13).png"
 	},
 	{
 		"id": "3",
-		"title": "Кухня Ортлер",
+		"title": "Ортлер асүйі",
 		"art": 24876,
 		"price": 51000,
-		"text": "Угловой вариант кухонного гарнитура Ортлер",
+		"text": "Ортлер асүй гарнитурының бұрыштық нұсқасы",
 		"imgSrc": "kitchen(14).png"
 	},
 	{
 		"id": "8",
-		"title": "Кухня Гавия",
+		"title": "Гавия асүйі",
 		"art": 958328,
 		"price": 44500,
-		"text": "Кухонный гарнитур с автоматическими доводчиками",
+		"text": "Автоматты жабылғыштары бар асүй гарнитуры",
 		"imgSrc": "kitchen(19).png"
 	},
 	{
 		"id": "0",
-		"title": "Кухня Фебо",
+		"title": "Фебо асүйі",
 		"art": 246388,
 		"price": 51200,
-		"text": "Современный кухонный гарнитур по вашим размерам",
+		"text": "Заманауи асүй гарнитуры, өз өлшемдеріңізге сай",
 		"imgSrc": "kitchen(21).png"
 	},
 	{
 		"id": "7",
-		"title": "Кухня Мармолада",
+		"title": "Мармолада асүйі",
 		"art": 2828528,
 		"price": 46800,
-		"text": "Классический вариант кухни с современными функциями",
+		"text": "Классикалық асүй заманауи функцияларымен",
 		"imgSrc": "kitchen(23).png"
 	},
 	{
 		"id": "6",
-		"title": "Кухня Гэлакси",
+		"title": "Гэлакси асүйі",
 		"art": 288382248,
 		"price": 67300,
-		"text": "Глянцевая кухня с островом для готовки",
+		"text": "Аралдық жылтыр асүй",
 		"imgSrc": "kitchen(20).png"
 	},
 	{
 		"id": "9",
-		"title": "Кухня Стельвио",
+		"title": "Стельвио асүйі",
 		"art": 2722858,
 		"price": 81300,
-		"text": "Гарнитур с мраморной поверхностью и островом для готовки",
+		"text": "Мраморлы беті және аралы бар гарнитур",
 		"imgSrc": "kitchen(12).png"
 	},
     {
 		"id": "94",
-		"title": "Кухня Спэйс",
+		"title": "Спэйс асүйі",
 		"art": 2722858,
 		"price": 78300,
-		"text": "Гарнитур с мраморной поверхностью и островом для готовки",
+		"text": "Мраморлы беті және аралы бар гарнитур",
 		"imgSrc": "kitchen(22).png"
 	}
 ]
@@ -99,7 +98,7 @@ kitchens.forEach ((kitchen) => {
     `
 	<div class="products-item" data-id="${kitchen.id}">
 		<div class="products-item-img"> 
-			<img src="./img/items/kitchen/${kitchen.imgSrc}" alt="Упс..." class="productImg">
+			<img src="./img/items/kitchen/${kitchen.imgSrc}" alt="Кешіріңіз..." class="productImg">
 		</div>
 
 		<div class="products-item-title ">${kitchen.title}</div>
@@ -114,14 +113,14 @@ kitchens.forEach ((kitchen) => {
 			</div>
 
 			<div class="price">
-				<div class="price__currency">${kitchen.price} ₽</div>
+				<div class="price__currency">${kitchen.price} ₸</div>
 			</div>
 		</div>
 
 		<div class="products-action">
-			<button data-cart class="button glow-on-hover product-button"> В корзину</button>
+			<button data-cart class="button glow-on-hover product-button"> Себетке</button>
 		</div>
-		<div class="price__weight">Добавлено: ${dataUpdate}</div>
+		<div class="price__weight">Қосылған күні: ${dataUpdate}</div>
 	</div>
 
     `
