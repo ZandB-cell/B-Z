@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="./css/mainController.css">
     <link rel="shortcut icon" href="./img/style/sofa.png" type="image/x-icon">
 
-    <title>Ыңғайлы үй</title>
+    <title>Бәрі сәздің үйіңіз үшін</title>
+
+    <!-- Барлық жазуларды Arial қарпімен көрсету -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <section class="main">
@@ -34,7 +41,7 @@
                     <button class="theme themetoggle">
                         <span class="ThemeInfo"></span>
                     </button>
-                    <h4 class="main-title"> Сапа мен жайлылық қатар жүреді</h4>
+                    <h4 class="main-title">Сапа мен жайлылық қатар жүреді</h4>
                     <p class="main-text">Маусымдық жаңалықтарды сатып алып, жиһаздың жайлылығы мен сапасын сезініңіз. Біз сіздің үйіңізге дизайн-жобаны тегін жасап береміз.</p>
                     <div class="main-action">
                         <button class="button glow-on-hover" id="main-info" type="button">Каталог</button>
@@ -44,7 +51,7 @@
             </div>
         </section>
 
-        <button class="back-to-top hidden" title="Жоғарыға оралу">	&#9650;</button>
+        <button class="back-to-top hidden" title="Жоғарыға оралу">&#9650;</button>
     </section>
 
     <div class="purchase">
@@ -56,7 +63,7 @@
                         <div class="cancel">&#10008;</div>
                     </div>
                     
-                    <div data-cart-empty class="empty"> Себет бос </div>
+                    <div data-cart-empty class="empty">Себет бос</div>
 
                     <div class="cartContent">
                         <div class="cart-wrapper"></div>
@@ -76,22 +83,21 @@
                                 <form>
                                     <div class="form-group">
                                         <input type="radio" name="payment" value="cash" id="cash-value" class="radio-hidden" required>
-						                <label for="cash-value" class="radio-label">Қолма-қол</label>
+                                        <label for="cash-value" class="radio-label">Қолма-қол</label>
 
                                         <input type="radio" name="payment" value="card" id="card-value" class="radio-hidden">
-						                <label for="card-value" class="radio-label">Офисте карта арқылы</label>
+                                        <label for="card-value" class="radio-label">Офисте карта арқылы</label>
 
                                         <input type="radio" name="payment" value="online" id="online-value" class="radio-hidden">
-						                <label for="online-value" class="radio-label">Онлайн</label>
+                                        <label for="online-value" class="radio-label">Онлайн</label>
 
                                         <input type="radio" name="payment" value="loan" id="loan-value" class="radio-hidden">
-						                <label for="loan-value" class="radio-label">Несие арқылы</label>
+                                        <label for="loan-value" class="radio-label">Несие арқылы</label>
 
                                         <textarea name="extra" id="userComment" cols="30" rows="3" maxlength="2000" placeholder="Пікір қалдыру"></textarea>
-
                                     </div>
 
-                                    <button class="freeDelivery confirm disabled" >Тапсырысты рәсімдеу</button>
+                                    <button class="freeDelivery confirm disabled">Тапсырысты рәсімдеу</button>
                                 </form>
                             </div>
                         </div>
@@ -100,7 +106,7 @@
             </form>
         </section>
 
-        <button class="cart cartIcon " id="cart" title="Сатып алу">
+        <button class="cart cartIcon" id="cart" title="Сатып алу">
             <img class="cart__image" src="./img/style/cart.svg" alt="Себет" />
             <div class="cart__num" id="cart_num">0</div>
         </button>
@@ -112,7 +118,6 @@
             <div class="products-items" id="chairCard"></div>
         </div>
     </section>
-
 
     <section class="products" id="armchairs">
         <div class="container">
@@ -145,14 +150,12 @@
     <section class="help" id="help">
         <div class="container">
             <div class="title">Кеңесшіге хабарласыңыз</div>
-
             <div class="help-form">
                 <div class="help-form-text">
                     Барлық деректерді толтырыңыз, біздің менеджер сізге кеңес беру үшін хабарласады
                 </div>
 
                 <div class="help-form-inputs">
-
                     <div class="help-form-input">
                         <input type="text" placeholder="Атыңыз" id="name">
                     </div>
@@ -171,7 +174,6 @@
         </div>
     </section>
     
-    
     <footer class="footer">
         <div class="container">
             <div class="footer-links">
@@ -186,9 +188,8 @@
                     <li class="footer-item"><a data-link="sofas">Дивандар</a></li>
                     <li class="footer-item"><a data-link="kitchen">Асүй</a></li>
                 </ul>
-
             </div>
-            <div class="rights">&copy; Барлық құқықтар қорғалған</div>
+            <div class="rights">&copy; @Сіздің барлық құқықтыңыз қорғалған</div>
         </div>
     </footer>
 
@@ -198,8 +199,8 @@
     <script src="./js/goods/GoodArmchairs.js"></script>
     <script src="./js/goods/GoodWardrobe.js"></script>
     <script src="./js/goods/GoodKitchen.js"></script>
-	<script src="./js/goods/SofasRender.js"></script>
-	<script src="./js/ChangeTheme.js"></script>
+    <script src="./js/goods/SofasRender.js"></script>
+    <script src="./js/ChangeTheme.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/backToTopButton.js"></script>
