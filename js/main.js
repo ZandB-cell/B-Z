@@ -1,11 +1,9 @@
-
-
-//скрол для меню
+// Мәзір үшін скролл
 document.getElementById('main-info').onclick = function () {
     document.getElementById('chairs').scrollIntoView({behavior: 'smooth'})
 }
 
-//ссылки из header
+// header-дегі сілтемелер
 
 let links = document.querySelectorAll('.menu-item > a')
 for (let i = 0; i < links.length; i++){
@@ -14,7 +12,7 @@ for (let i = 0; i < links.length; i++){
     }
 }
 
-//ссылки из footer
+// footer-дегі сілтемелер
 
 let footerLinks = document.querySelectorAll('.footer-item > a')
 for (let i = 0; i < footerLinks.length; i++){
@@ -24,7 +22,7 @@ for (let i = 0; i < footerLinks.length; i++){
 }
 
 
-//валидация инпутов для отправки данных менеджеру
+// Менеджерге деректерді жіберуге арналған инпуттарды валидациялау
 
 const helpInfo = document.querySelector('.help-form-inputs')
 const helpText = document.querySelector('.help-form-text')
@@ -53,7 +51,6 @@ helpButton.addEventListener('click', function () {
             item.value = ''
         })
         helpInfo.classList.add('none')
-        helpText.innerText = 'Мы скоро свяжемся с Вами!'
+        helpText.innerText = 'Біз жақында сізбен хабарласамыз!'
     }
 })
-
