@@ -15,12 +15,12 @@ function addlightClassToHTML() {
         if (localStorage.getItem('theme') === 'light') 
         { 
             document.querySelector('html').classList.add('light');
-            text.innerText = 'қараңғы' 
+            text.innerText = 'ҚАРАҢЖЫ РЕЖИМ' 
         }
         else 
         { 
             document.querySelector('html').classList.remove('light'); 
-            text.innerText = 'жарық' 
+            text.innerText = 'ЖАРЫҚ РЕЖИМ' 
         } 
     }
     catch (err) { } 
