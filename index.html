@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/mainController.css">
     <link rel="shortcut icon" href="./img/style/sofa.png" type="image/x-icon">
+
+    <!-- Негізгі стильдер -->
+    <link rel="stylesheet" href="./css/mainController.css">
+    <!-- 🌗 Жарық/Қараңғы тақырып стилі -->
     <link rel="stylesheet" href="./css/lightTheme.css">
 
-    <title>Бәрі сәздің үйіңіз үшін</title>
+    <title>Бәрі сіздің үйіңіз үшін</title>
 
-    <!-- Барлық жазуларды Arial қарпімен көрсету -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,6 +34,11 @@
                         <li class="menu-item"><a data-link="help"><div class="circle"><img src="./img/style/help.svg" alt="Упс.." title="Бізбен байланысыңыз"></div></a></li>
                     </ul>
                 </nav>
+
+                <!-- 🌗 Тақырып ауыстырғыш батырма -->
+                <button class="theme themetoggle">
+                    <span class="ThemeInfo"></span>
+                </button>
             </div>
         </header>
         
@@ -39,9 +46,6 @@
             <div class="container">
                 <div class="main-info">
                     <span class="main-small-info">Жаңа коллекция</span>
-                    <button class="theme themetoggle">
-                        <span class="ThemeInfo"></span>
-                    </button>
                     <h4 class="main-title">Сапа мен жайлылық қатар жүреді</h4>
                     <p class="main-text">Маусымдық жаңалықтарды сатып алып, жиһаздың жайлылығы мен сапасын сезініңіз. Біз сіздің үйіңізге дизайн-жобаны тегін жасап береміз.</p>
                     <div class="main-action">
@@ -194,6 +198,7 @@
         </div>
     </footer>
 
+    <!-- JS файлдар -->
     <script src="./js/updateDate.js"></script>
     <script src="./js/toggleCartStatus.js"></script>
     <script src="./js/goods/GoodsChairs.js"></script>
@@ -201,9 +206,11 @@
     <script src="./js/goods/GoodWardrobe.js"></script>
     <script src="./js/goods/GoodKitchen.js"></script>
     <script src="./js/goods/SofasRender.js"></script>
-    <script src="./js/ChangeTheme.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/backToTopButton.js"></script>
+
+    <!-- 🌗 Тақырып ауыстыру логикасы -->
+    <script src="./js/ChangeTheme.js"></script>
 </body>
 </html>
