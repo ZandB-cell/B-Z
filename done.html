@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/mainController.css">
-    <link rel="shortcut icon" href="./img/style/sofa.png" type="image/x-icon">
 
+    <!-- Негізгі стильдер -->
+    <link rel="stylesheet" href="./css/mainController.css">
+
+    <!-- 🌗 Жарық/қараңғы тақырып стилі -->
+    <link rel="stylesheet" href="./css/lightTheme.css">
+
+    <link rel="shortcut icon" href="./img/style/sofa.png" type="image/x-icon">
     <title>Жайлы үй</title>
 
     <!-- Барлық жазуларды Arial қарпімен көрсету -->
@@ -16,12 +21,15 @@
         }
     </style>
 </head>
-<body>
 
+<body>
     <section class="main">
         <header class="header">
             <div class="container">
-                <div><img src="./img/style/logo.svg" alt="Бір нәрсе дұрыс болмады" class="logo"></div>
+                <div>
+                    <img src="./img/style/logo.svg" alt="Бір нәрсе дұрыс болмады" class="logo">
+                </div>
+
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
@@ -63,9 +71,12 @@
             <div class="container">
                 <div class="main-info">
                     <span class="main-small-info">Жаңа коллекция</span>
+
+                    <!-- 🌗 Тақырып ауыстырғыш батырма -->
                     <button class="theme themetoggle">
                         <span class="ThemeInfo"></span>
                     </button>
+
                     <h4 class="main-title">Сіздің өтініміңіз сәтті жіберілді</h4>
                     <p class="main-text">Біз Сізбен жақын уақытта хабарласамыз!</p>
                     <div class="main-action"></div>
@@ -76,9 +87,9 @@
                 <a class="button" id="main-info" href="./index.html">Басты бетке</a>
             </div>
         </section>
-
     </section>
 
+    <!-- 🔧 Негізгі JS файлдар -->
     <script src="./js/ChangeTheme.js"></script>
     <script src="./js/main.js"></script>
 </body>
