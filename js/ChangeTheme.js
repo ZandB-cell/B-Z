@@ -1,6 +1,7 @@
 const text = document.querySelector('.ThemeInfo');
 const toggleBtn = document.querySelector('.themetoggle');
-const icon = toggleBtn.querySelector('.icon');
+
+toggleBtn.innerHTML = '<span class="icon">☀️</span>';
 
 toggleBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -13,6 +14,7 @@ toggleBtn.addEventListener('click', (event) => {
 });
 
 function addlightClassToHTML() {
+  const icon = toggleBtn.querySelector('.icon');
   try {
     if (localStorage.getItem('theme') === 'light') {
       document.querySelector('html').classList.add('light');
